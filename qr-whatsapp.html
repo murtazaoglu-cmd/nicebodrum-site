@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nice Bodrum - WhatsApp QR Kod</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<style>
+  body{
+    margin:0;
+    font-family:'Segoe UI',Arial,sans-serif;
+    background:#1B1F22;
+    display:flex;align-items:center;justify-content:center;
+    min-height:100vh;
+    padding:20px;
+    box-sizing:border-box;
+  }
+  .card{
+    background:#fff;
+    border-radius:16px;
+    padding:40px;
+    text-align:center;
+    max-width:380px;
+    width:100%;
+    box-shadow:0 20px 60px rgba(0,0,0,0.4);
+  }
+  .logo{
+    font-family:'Segoe UI',Arial,sans-serif;
+    font-weight:700;
+    font-size:1.4rem;
+    text-transform:uppercase;
+    letter-spacing:0.03em;
+    color:#1B1F22;
+    margin-bottom:4px;
+  }
+  .logo span{color:#C6893F;}
+  .tagline{
+    font-size:0.85rem;
+    color:#666;
+    margin-bottom:24px;
+  }
+  #qrcode{
+    display:flex;
+    justify-content:center;
+    margin-bottom:20px;
+  }
+  .cta{
+    font-size:1.05rem;
+    font-weight:600;
+    color:#1B1F22;
+    margin-bottom:6px;
+  }
+  .sub{
+    font-size:0.82rem;
+    color:#888;
+  }
+  .instructions{
+    margin-top:28px;
+    padding-top:20px;
+    border-top:1px solid #eee;
+    font-size:0.78rem;
+    color:#999;
+    text-align:left;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">NICE <span>BODRUM</span></div>
+    <div class="tagline">Kapı Motoru & Bahçe Kapısı</div>
+    <div id="qrcode"></div>
+    <div class="cta">📱 WhatsApp'tan Hemen Yazın</div>
+    <div class="sub">0530 393 18 40</div>
+    <div class="instructions">
+      <strong>Kullanım:</strong> Bu sayfanın ekran görüntüsünü alıp kartvizit/araç stickerı olarak bastırabilirsiniz. Yazdırırken en az 3x3 cm boyutunda olmasına dikkat edin (çok küçük olursa telefon kamerası okumakta zorlanır).
+    </div>
+  </div>
+
+  <script>
+    new QRCode(document.getElementById("qrcode"), {
+      text: "https://wa.me/905303931840?text=Merhaba%2C%20web%20sitenizden%20geliyorum",
+      width: 220,
+      height: 220,
+      colorDark: "#1B1F22",
+      colorLight: "#ffffff",
+      correctLevel: QRCode.CorrectLevel.H
+    });
+  </script>
+</body>
+</html>

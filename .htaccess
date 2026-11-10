@@ -1,0 +1,38 @@
+# Nice Bodrum - .htaccess
+Options -Indexes
+DirectoryIndex index.html
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# www -> www'suz, tek alan adı (301)
+RewriteCond %{HTTP_HOST} ^www\.nicebodrum\.com$ [NC]
+RewriteRule ^(.*)$ https://nicebodrum.com/$1 [R=301,L]
+
+# .html uzantılı istekleri temiz adrese yönlendir (301)
+RewriteCond %{THE_REQUEST} \s/+([^?\s]+)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L,NE]
+RewriteRule ^index$ / [R=301,L]
+
+# Temiz adresi .html dosyasına eşle (iç yönlendirme)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+?)/?$ $1.html [L]
+</IfModule>
+
+# Hassas dosyaları gizle
+<FilesMatch "(\.(log|bak|sql|env|ini|conf|swp|old)$|^\.)">
+    Require all denied
+</FilesMatch>
+<FilesMatch "^\.htaccess$">
+    Require all denied
+</FilesMatch>
+
+# Güvenlik başlıkları
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Strict-Transport-Security "max-age=31536000"
+</IfModule>

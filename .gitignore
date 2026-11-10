@@ -1,0 +1,9 @@
+# gizli / yerel dosyalar
+*.log
+form_debug.log
+error_log
+gonder-ayar.php
+.env
+*.zip
+*.bak
+*.swp
