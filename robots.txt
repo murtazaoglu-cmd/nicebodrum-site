@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /gonder.php
 
 Sitemap: https://nicebodrum.com/sitemap.xml

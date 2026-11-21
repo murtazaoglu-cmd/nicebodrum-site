@@ -1,22 +1,30 @@
 # Nice Bodrum
 
-> Bodrum yarımadasında (Bitez merkezli) Nice marka kayar kapı motoru, döner kapı motoru, bariyer sistemi ve özel ölçü bahçe kapısı imalatı yapan bir işletme. Aynı gün keşif ve montaj hizmeti Bodrum yarımadası genelinde, Muğla'nın diğer ilçelerinde proje bazlı hizmet verilir.
+> Bitez (Bodrum) merkezli Nice marka kapı motoru satış, montaj ve servis işletmesi: kayar kapı motoru, döner kapı motoru, bariyer sistemi, özel ölçü bahçe kapısı imalatı, kapı motoru arıza onarımı ve telefondan kapı açma (Control X Access). Hizmet bölgesi Bodrum yarımadasıdır; Muğla'nın diğer ilçelerinde planlı projelere bakılır. Bodrum yarımadasında yerinde keşif ücretsizdir; fiyat sabit liste olarak yayınlanmaz, keşif sonrası yazılı teklifle bildirilir. Türkçe ve İngilizce destek verilir.
 
-## Hizmetler
-- [Kayar Kapı Motorları](https://nicebodrum.com/#hizmetler): Nice Road, Rox, Robus serisi motorlar
-- [Döner Kapı Motorları](https://nicebodrum.com/#hizmetler): Nice Wingo, Toona serisi motorlar
-- [Bariyer Sistemleri](https://nicebodrum.com/#hizmetler): Nice Wide, Bar serisi
-- [Bahçe Kapısı İmalatı](https://nicebodrum.com/#hizmetler): Özel ölçü demir konstrüksiyon imalat
+## Hizmetler ve ana sayfalar
+- [Ana Sayfa](https://nicebodrum.com/): Hizmetler, motor serileri, garanti ve bakım, SSS
+- [Control X Access](https://nicebodrum.com/control-x-access): Telefondan kapı açma; aile ve süreli misafir erişimi, kapı durumu, Wi-Fi/Ethernet/4G seçenekleri. Buton (kuru kontak) girişi olan kapı motorlarıyla çalışır; uygunluk keşifte kontrol edilir
+- [Online Teklif Formu](https://nicebodrum.com/teklif): Kapı ölçüleri girilip WhatsApp veya e-posta ile teklif talebi
+- [Fiyat Rehberi](https://nicebodrum.com/fiyat): Fiyatı belirleyen faktörler (rakam içermez)
+- [Kurumsal Hizmetler](https://nicebodrum.com/kurumsal): Site yönetimi, emlak ofisi ve otel iş ortaklıkları
+- [Yaz Öncesi Bakım](https://nicebodrum.com/yaz-bakim-kampanyasi): Sezon öncesi bakım kapsamı
+- [Muğla Geneli](https://nicebodrum.com/mugla-kapi-motoru): Bodrum dışındaki ilçeler için çalışma şekli
 
-## Önemli Sayfalar
-- [Control X Access](https://nicebodrum.com/control-x-access): Telefondan kapı açma sistemi; aile/misafir erişimi, kapı durumu, Wi-Fi/Ethernet/4G seçenekleri
-- [Online Teklif Formu](https://nicebodrum.com/teklif): Kapı ölçüleri girilip WhatsApp/e-posta ile teklif talebi
-- [Arıza Rehberi](https://nicebodrum.com/ariza): Kapı motoru arıza belirtileri ve ilk müdahale bilgisi
-- [Fiyat Rehberi](https://nicebodrum.com/fiyat): Genel fiyat aralığı bilgisi
-- [Kurumsal Hizmetler](https://nicebodrum.com/kurumsal): Site yönetimi, emlak ofisi, otel iş ortaklıkları
-- [English](https://nicebodrum.com/en): İngilizce sayfa (yabancı villa sahipleri için)
+## Rehberler
+- [Arıza Rehberi](https://nicebodrum.com/ariza): Kapı motoru çalışmıyorsa 5 dakikalık kontrol ve 8 yaygın arıza belirtisi
+- [Kumanda Kopyalama ve Rolling Code](https://nicebodrum.com/kumanda-kopyalama-rolling-code): Sabit kod ile değişken kod farkı, yedek kumanda tanıtma, kayıp kumandanın sistemden silinmesi
+- [Nice, Came, BFT, FAAC Karşılaştırma](https://nicebodrum.com/nice-came-bft-faac-karsilastirma): Marka seçerken bakılacak ölçütler (marka üstünlüğü iddia etmez, fiyat içermez)
+- [Bahçe Kapısı Motoru Seçim Rehberi](https://nicebodrum.com/bahce-kapisi-motoru-secim-rehberi): Kayar ve kanatlı kapı, kapı ağırlığı, kullanım yoğunluğu, güvenlik, deniz iklimi, bakım
+
+## Mahalle sayfaları
+- [Bitez](https://nicebodrum.com/bitez-kapi-motoru), [Bodrum Merkez](https://nicebodrum.com/bodrum-merkez-kapi-motoru), [Gümbet](https://nicebodrum.com/gumbet-kapi-motoru), [Yalıkavak](https://nicebodrum.com/yalikavak-kapi-motoru), [Türkbükü](https://nicebodrum.com/turkbuku-kapi-motoru), [Göltürkbükü](https://nicebodrum.com/golturkbuku-kapi-motoru), [Turgutreis](https://nicebodrum.com/turgutreis-kapi-motoru), [Ortakent](https://nicebodrum.com/ortakent-kapi-motoru), [Konacık](https://nicebodrum.com/konacik-kapi-motoru), [Torba](https://nicebodrum.com/torba-kapi-motoru), [Akyarlar](https://nicebodrum.com/akyarlar-kapi-motoru)
+
+## English
+- [English page](https://nicebodrum.com/en): Gate motor repair and installation, remote replacement, smartphone gate control, free survey, Bodrum peninsula
 
 ## İletişim
-- Telefon: 0530 393 18 40
-- E-posta: murtazaoglu@gmail.com
+- Telefon / WhatsApp: 0530 393 18 40
+- E-posta: destek@nicebodrum.com
 - Adres: Palamut Cad. No:21/2, Bitez, Bodrum, Muğla
+- Çalışma saatleri: Pazartesi–Cumartesi 08:00–19:00

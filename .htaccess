@@ -5,9 +5,19 @@ DirectoryIndex index.html
 <IfModule mod_rewrite.c>
 RewriteEngine On
 
+# HTTP -> HTTPS, tek adımda (301). Proxy/CDN arkasında döngü olmasın diye X-Forwarded-Proto da kontrol edilir;
+# AutoSSL doğrulaması için .well-known hariç tutulur.
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP:X-Forwarded-Proto} !https [NC]
+RewriteCond %{REQUEST_URI} !^/\.well-known/ [NC]
+RewriteRule ^(.*)$ https://nicebodrum.com/$1 [R=301,L]
+
 # www -> www'suz, tek alan adı (301)
 RewriteCond %{HTTP_HOST} ^www\.nicebodrum\.com$ [NC]
 RewriteRule ^(.*)$ https://nicebodrum.com/$1 [R=301,L]
+
+# /index.html -> / (tek adım)
+RewriteRule ^index\.html$ / [R=301,L]
 
 # .html uzantılı istekleri temiz adrese yönlendir (301)
 RewriteCond %{THE_REQUEST} \s/+([^?\s]+)\.html[\s?] [NC]
@@ -35,4 +45,31 @@ RewriteRule ^(.+?)/?$ $1.html [L]
     Header always set X-Frame-Options "SAMEORIGIN"
     Header always set Referrer-Policy "strict-origin-when-cross-origin"
     Header always set Strict-Transport-Security "max-age=31536000"
+</IfModule>
+
+# Arşiv dosyaları dışarıya servis edilmesin
+<FilesMatch "\.(zip|tar|gz|7z|rar)$">
+    Require all denied
+</FilesMatch>
+
+# Dizinlenmesi istenmeyen yardımcı dosyalar
+<IfModule mod_headers.c>
+<FilesMatch "^(gonder\.php|qr-whatsapp\.html)$">
+    Header set X-Robots-Tag "noindex, nofollow"
+</FilesMatch>
+</IfModule>
+
+# Sıkıştırma
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/css text/xml application/xml application/javascript application/json image/svg+xml
+</IfModule>
+
+# Statik varlıklar için önbellek (HTML için süre tanımlanmaz)
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/webp "access plus 1 month"
+    ExpiresByType image/svg+xml "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType application/pdf "access plus 1 week"
 </IfModule>
