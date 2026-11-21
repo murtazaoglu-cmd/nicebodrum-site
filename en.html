@@ -150,6 +150,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .nav-cta .btn{padding:9px 13px;font-size:.76rem;white-space:nowrap;}
   @media(max-width:520px){.nav{padding:12px 14px;}.nav-cta .btn.solid{padding:9px 10px;font-size:.7rem;letter-spacing:.02em;}.logo{font-size:1.25rem;}}
 </style>
+<style>/* NB-BAR */
+.nb-bar{display:none}
+@media(max-width:760px){
+ .nb-bar{display:block;position:fixed;left:0;right:0;bottom:0;z-index:95;background:#1B1F22;border-top:1px solid #C6893F;padding:6px 10px calc(6px + env(safe-area-inset-bottom))}
+ .nb-bar-s{display:block;text-align:center;font:500 11px/1.3 Inter,system-ui,sans-serif;color:#D9A44E;margin:0 0 5px}
+ .nb-bar-b{display:flex;gap:8px}
+ .nb-bar-b a{flex:1;text-align:center;padding:11px 8px;border-radius:6px;font:700 15px/1.1 Inter,system-ui,sans-serif;text-decoration:none;color:#fff}
+ .nb-bar-b .nb-call{background:#C6893F;color:#1B1F22}
+ .nb-bar-b .nb-wa{background:#1f9d55}
+ body{padding-bottom:78px}
+ .fab{display:none!important}
+}</style>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -334,5 +346,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   }
 </script>
 
+<div class="nb-bar" id="nbBar" role="complementary" aria-label="Hızlı iletişim"><span class="nb-bar-s" id="nbStatus">Ücretsiz keşif · Yazılı sabit teklif</span><div class="nb-bar-b"><a class="nb-call" href="tel:05303931840">Hemen Ara</a><a class="nb-wa" href="https://wa.me/905303931840?text=Merhaba%2C%20kap%C4%B1%20motoru%20i%C3%A7in%20foto%C4%9Fraf%20g%C3%B6nderip%20fiyat%20almak%20istiyorum." target="_blank" rel="noopener">WhatsApp</a></div></div>
+<script>/* NB-BAR */
+(function(){
+function ev(n,p){try{if(window.gtag)gtag('event',n,p||{});}catch(e){}}
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href]');if(!a)return;var h=a.getAttribute('href')||'';var loc=a.closest('#nbBar')?'sabit_cubuk':'sayfa';
+if(h.indexOf('tel:')===0)ev('phone_click',{link_location:loc,page_path:location.pathname});
+else if(h.indexOf('wa.me')>-1)ev('whatsapp_click',{link_location:loc,page_path:location.pathname});},true);
+document.addEventListener('submit',function(e){var f=e.target;if(f&&f.action&&f.action.indexOf('gonder.php')>-1)ev('generate_lead',{form_id:f.id||'form',page_path:location.pathname});},true);
+try{var t=new Date(new Date().toLocaleString('en-US',{timeZone:'Europe/Istanbul'}));var d=t.getDay(),h=t.getHours();var s=document.getElementById('nbStatus');
+if(s){if(d>=1&&d<=6&&h>=8&&h<19)s.textContent='Şimdi açık · 19:00\'a kadar · Ücretsiz keşif';else s.textContent='WhatsApp\'a yazın, '+(d===0||(d===6&&h>=19)?'Pazartesi':(h<8?'bugün':'yarın'))+' 08:00\'de dönüyoruz';}}catch(e){}
+})();</script>
 </body>
 </html>
